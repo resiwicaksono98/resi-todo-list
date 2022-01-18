@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Sidebar from '../components/sidebar';
-import {Dashboard, Redux} from '../pages/index';
+import {Dashboard, Redux, Hooks} from '../pages/index';
 
 const Routing = () => {
     return (
         <div>
             <Routes>
                 <Route path="/" element={<Dashboard />} />
-                <Route path="/Redux" element={<Redux />} />
+                <Route path="/redux" element={<Redux />} />
+                <Route path="/hooks" element={<Hooks />} />
             </Routes>
         </div>
     );

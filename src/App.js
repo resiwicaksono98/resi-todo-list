@@ -8,9 +8,9 @@ function App() {
   return (
     <div >
       <Provider store={store}>
-        <div className='min-h-screen bg-white'>
+        <div className='min-h-screen  bg-white'>
           <div className="flex">
-            <div className="w-1/5 bg-gray-800 xs:bg-gray:200 min-h-screen px-4 pt-6">
+            <div className="md:w-1/5 sm:w-2/5 bg-gray-800 xs:bg-gray:200 min-h-screen px-4 pt-6">
               <Sidebar />
             </div>
             <div className="w-4/5 p-5">

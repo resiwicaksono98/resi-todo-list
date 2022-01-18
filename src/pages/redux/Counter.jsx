@@ -9,9 +9,10 @@ function Counter() {
     let task = useSelector(state => state.task)
     const dispatch = useDispatch()
     return (
-        <div className='divide-y-8'>
+        <div>
             <Donebutton  onClick={() => dispatch(taskDone(true))}/>
             <span className='mx-3'> Tugas : {(task.task).toString()} </span>
+            <div className='divider'></div>
             <div className="content py-4 my-5">
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => dispatch(decrementWithCheckingAction(1))}>
                     -
